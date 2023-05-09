@@ -1,3 +1,38 @@
+# Setup
+How to setup the project in AWS Sagemaker
+
+If you want to setup the sagemaker envrionment locally, please see: https://towardsdatascience.com/setting-up-amazon-sagemaker-environment-on-your-local-machine-7329e0178adc
+
+1. Connect to the AWS Sagemaker console: https://console.aws.amazon.com/sagemaker
+2. Choose the region where you want to setup sagemaker environment
+3. On the left pane, click on "Studio"
+4. Create a new sagemaker domain or open an existing one
+5. In SageMaker Studio, open a new terminal in File > New > Terminal
+<div style="text-align:left;margin-left:50px;">
+    <img src="./img/setup_1.png" alt="setup1" width="600" style="display:inline-block">
+</div>
+
+6. Type `git clone https://github.com/X-Immersion/sagemaker-jumpstart-generative-ai-examples.git` (you shouldn't need to provide credentials)
+7. On the left pane, click on the folder icon. A new directory named `sagemaker-jumpstart-generative-ai-examples` should have been created
+8. Open any jupyter notebook, such as `04-flan-t5-xl/01-in-context-learning.ipynb`
+9. You should be prompted to set up notebook environment. Select the instance type and image of your choice *(if the dialog box isn't showed, you can execute one block of code and it should appear)*
+<div style="text-align:left;margin-left:50px;">
+    <img src="./img/setup_2.png" alt="setup2" width="400" style="display:inline-block">
+</div>
+
+10. Once the kernel have been started, execute the blocks of code by clicking the "Play" button multiple times (you can skip unnecessary block of code)
+    *    **NOTE:** Once a block of code have been runned, all variables are stored in the kernel for further usage. This means that it is NOT recommanded to use the same kernel for multiple notebooks ! You can stop/restart the kernel by clicking the stop and restart icons.
+<div style="text-align:left;margin-left:50px;">
+    <img src="./img/setup_3.png" alt="setup3" width="600" style="display:inline-block">
+</div>
+
+11. Once you are done with sagemaker studio, **DO NOT FORGET** to stop all running kernel by click the kernel icon (just below the file icon on the left pane)
+<div style="text-align:left;margin-left:50px;">
+    <img src="./img/setup_4.png" alt="setup4" width="400" style="display:inline-block">
+</div>
+<br/>
+
+# Usage
 ## Jumpstart Generative AI Examples
 This repository contains code examples for **SageMaker Jumpstart** Generative AI, a tutorial series designed to help users get started with generative AI using Python and PyTorch.
 
